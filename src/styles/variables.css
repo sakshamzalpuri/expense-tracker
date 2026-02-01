@@ -1,0 +1,19 @@
+:root {
+  --color-primary: #3ddad7;
+  --color-sidebar: #0b2f2f;
+
+  --bg-main: #f2f4f6;
+  --bg-card: #ffffff;
+
+  --text-muted: #777;
+  --text-light: #cfdede;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --gap-sm: 14px;
+  --gap-md: 24px;
+
+  --font-main: Inter, sans-serif;
+}

@@ -1,0 +1,159 @@
+/* SIDEBAR STYLES */
+.sidebar {
+  background: var(--color-sidebar);
+  color: #fff;
+}
+
+.logo {
+  margin-bottom: 32px;
+}
+.logo a{
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 28px;
+    font-weight: 600;
+}
+.logo .first-letter{
+    color: var(--color-primary);
+}
+.aside-items a {
+    display: block;
+    margin: 14px 0;
+    color: var(--text-light);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    background: red;
+    padding: 4px 2px;
+    border-radius: 6px;
+}
+
+
+.aside-items a.active {
+    color: var(--color-primary);
+}
+
+/* SUPPORT CARD */
+.support {
+    background: rgba(255,255,255,0.08);
+    padding: 16px;
+    border-radius: var(--radius-md);
+}
+
+.support button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: var(--radius-sm);
+    background: var(--color-primary);
+    cursor: pointer;
+}
+
+.logout a{
+     text-decoration: none;
+    font-weight: 600;
+    background: red;
+    padding: 4px 8px;
+    border-radius: 6px;
+    color: var(--color-primary);
+}
+/* TOPBAR TEXT */
+.topbar p {
+  color: var(--text-muted);
+}
+
+.icons {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.icons img {
+  border-radius: 50%;
+}
+
+/* CARD */
+.card {
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: var(--radius-lg);
+}
+
+/* Button - Exp - Inc */
+
+.buttons{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.expense,.income{
+  padding: 10px;
+  outline: none;
+  border: 2px solid var(--color-primary);
+  font-weight: 600;
+  border-radius:8px;
+  cursor: pointer;
+}
+
+/* CHART PLACEHOLDER */
+.fake-chart {
+  height: 220px;
+  margin-top: 20px;
+  background: linear-gradient(135deg,#e8f7f7,#ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3aa;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  color: #888;
+}
+
+/* STATUS BADGES */
+.pending {
+  background: #fff3c4;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+}
+
+.done {
+  background: #d9f7e8;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+}
+
+/* STATS */
+
+.stat p {
+  color: var(--text-muted);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.stat h2 {
+  margin: 6px 0;
+  color: var(--text-muted);
+  font-size: 22px;
+}
+
+.green {
+  color: #16a34a;
+  font-size: 14px;
+}

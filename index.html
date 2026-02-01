@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/styles/variables.css" />
+    <link rel="stylesheet" href="src/styles/base.css" />
+    <link rel="stylesheet" href="src/styles/layout.css" />
+    <link rel="stylesheet" href="src/styles/components.css" />
+  </head>
+  <body>
+    <section class="app">
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <div class="logo">
+            <a href=""><span class="first-letter">w</span>wealty</a>
+          </div>
+          <nav class="aside-items">
+            <a href="#overview">📊 Overview</a>
+            <a href="#budgets">💰 Budgets</a>
+            <a href="#expenses">📁 Expenses</a>
+            <a href="#investmensts">📈 Investmensts</a>
+            <a href="#reports">📄 Reports</a>
+            <a href="#settings">⚙️ Settings</a>
+          </nav>
+        </div>
+        <div class="logout">
+          <a href="#logout">🚪 Log out</a>
+        </div>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <div class="welcome-text">
+            <h1>Welcome back, <span class="weclome-user">Jhon</span></h1>
+          </div>
+          <div class="icons">
+            <span>🔍</span>
+            <span>🔔</span>
+            <img src="https://i.pravatar.cc/40" alt="avatar" />
+          </div>
+        </header>
+
+        <section class="content">
+          <!-- LEFT -->
+          <div class="left">
+            <div class="card chart">
+              <h3>Account Balance</h3>
+              <div class="fake-chart">📈 Chart Placeholder</div>
+            </div>
+
+            <div class="card transactions">
+              <h3>Recent Transactions</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Amount</th>
+                  </tr>
+                </thead>
+
+                <tbody id="expenseTable"></tbody>
+              </table>
+            </div>
+          </div>
+          <!-- RIGHT -->
+          <div class="right">
+            <div class="buttons">
+              <div class="button">
+                <button id="income" class="income">New Income</button>
+              </div>
+              <div class="button">
+                <button id="expense" class="expense">New Expense</button>
+              </div>
+            </div>
+            <div class="right">
+              <div class="card stat">
+                <p>Total Balance</p>
+                <h2 id="totalbalance">₹ 0</h2>
+                <span class="green"></span>
+              </div>
+
+              <div class="card stat">
+                <p>Main Account</p>
+                <h2 id="mainAccount">₹ 0</h2>
+              </div>
+
+              <div class="card stat">
+                <p>Savings</p>
+                <h2 id="savings">₹ 0</h2>
+                <span class="green"></span>
+              </div>
+
+              <div class="card stat">
+                <p>Investments</p>
+                <h2 id="investmensts">₹ 0</h2>
+                <span class="green"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+    <script type="module" src="src/script/state.js"></script>
+    <script type="module" src="src/script/main.js"></script>
+    <script type="module" src="src/script/ui.js"></script>
+    <script type="module" src="src/script/charts.js"></script>
+    <script type="module" src="src/script/expense.js"></script>
+    <script type="module" src="src/script/storage.js"></script>
+  </body>
+</html>

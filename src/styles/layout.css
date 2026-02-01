@@ -1,0 +1,44 @@
+/* LAYOUT */
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* SIDEBAR LAYOUT */
+.sidebar {
+  width: 240px;
+  padding: 24px;
+  background:#052E30 ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 32px;
+}
+
+/* TOPBAR */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* CONTENT GRID */
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+/* LEFT / RIGHT COLUMNS */
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
