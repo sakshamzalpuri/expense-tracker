@@ -1,23 +1,37 @@
 /* LAYOUT */
 .app {
   display: flex;
+  flex-direction: column;
   height: 100vh;
+  background: var(--bg-main);
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-/* SIDEBAR LAYOUT */
-.sidebar {
-  width: 240px;
-  padding: 24px;
-  background:#052E30 ;
+/* NAVBAR LAYOUT */
+.navbar {
+  width: 100%;
+  padding: 14px 32px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-top {
+  display: flex;
+  align-items: center;
+  gap: 48px;
 }
 
 /* MAIN */
 .main {
   flex: 1;
   padding: 32px;
+  overflow-y: auto;
 }
 
 /* TOPBAR */
@@ -41,4 +55,14 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+@media (max-width: 960px) {
+  .app {
+    padding: 0 16px;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
 }

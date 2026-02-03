@@ -8,40 +8,41 @@
     <link rel="stylesheet" href="src/styles/base.css" />
     <link rel="stylesheet" href="src/styles/layout.css" />
     <link rel="stylesheet" href="src/styles/components.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="app">
-      <aside class="sidebar">
-        <div class="sidebar-top">
-          <div class="logo">
-            <a href=""><span class="first-letter">w</span>wealty</a>
+      <nav class="navbar">
+        <div class="logo">
+          <a href=""><span class="first-letter">w</span>wealty</a>
+        </div>
+        <div class="nav-items">
+          <a href="#overview" class="active">Dashboard</a>
+          <a href="#budgets">History</a>
+          <a href="#expenses">Budget</a>
+          <a href="#reports">Group</a>
+        </div>
+        <div class="navbar-icons">
+          <button class="icon-btn theme-toggle">
+            <i class="ri-sun-line"></i>
+          </button>
+          <div class="user-avatar">
+            <img src="" alt="User" />
           </div>
-          <nav class="aside-items">
-            <a href="#overview">📊 Overview</a>
-            <a href="#budgets">💰 Budgets</a>
-            <a href="#expenses">📁 Expenses</a>
-            <a href="#investmensts">📈 Investmensts</a>
-            <a href="#reports">📄 Reports</a>
-            <a href="#settings">⚙️ Settings</a>
-          </nav>
         </div>
-        <div class="logout">
-          <a href="#logout">🚪 Log out</a>
-        </div>
-      </aside>
+      </nav>
       <main class="main">
         <header class="topbar">
-          <div class="welcome-text">
+          <nav class="welcome-text">
             <h1>Welcome back, <span class="weclome-user">Jhon</span></h1>
-          </div>
-          <div class="icons">
-            <span>🔍</span>
-            <span>🔔</span>
-            <img src="https://i.pravatar.cc/40" alt="avatar" />
-          </div>
+          </nav>
         </header>
 
         <section class="content">
+          
           <!-- LEFT -->
           <div class="left">
             <div class="card chart">
@@ -69,36 +70,39 @@
           <div class="right">
             <div class="buttons">
               <div class="button">
-                <button id="income" class="income">New Income</button>
+                <button id="incomeBtn" class="income">New Income</button>
               </div>
               <div class="button">
-                <button id="expense" class="expense">New Expense</button>
+                <button id="expenseBtn" class="expense">New Expense</button>
               </div>
             </div>
-            <div class="right">
-              <div class="card stat">
-                <p>Total Balance</p>
-                <h2 id="totalbalance">₹ 0</h2>
-                <span class="green"></span>
-              </div>
-
-              <div class="card stat">
-                <p>Main Account</p>
-                <h2 id="mainAccount">₹ 0</h2>
-              </div>
-
-              <div class="card stat">
-                <p>Savings</p>
-                <h2 id="savings">₹ 0</h2>
-                <span class="green"></span>
-              </div>
-
-              <div class="card stat">
-                <p>Investments</p>
-                <h2 id="investmensts">₹ 0</h2>
-                <span class="green"></span>
-              </div>
+            <div class="form toggle-form">
+              <form id="newIncome" action="">
+                <i class="ri-close-line cross-form"></i>
+                <h2>
+                  Create a new
+                  <span class="primary-income_word">income</span> transaction
+                </h2>
+                <label for="incomeAmount">Amount</label>
+                <input
+                  type="number"
+                  id="incomeAmount"
+                  placeholder="Enter amount"
+                />
+                <label for="incomeDescription">Description (Optional)</label>
+                <input
+                  type="text"
+                  id="incomeDescription"
+                  placeholder="Enter description"
+                />
+                <label for="incomeDate">Transaction Date</label>
+                <input type="date" id="incomeDate" placeholder="" />
+                <button id="incomeFormBtn" type="submit" lass="income-form-btn">
+                  Add new income
+                </button>
+              </form>
             </div>
+            
           </div>
         </section>
       </main>

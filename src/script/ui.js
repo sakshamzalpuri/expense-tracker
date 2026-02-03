@@ -21,4 +21,22 @@ export function renderExpenses() {
     tbody.appendChild(tr);
   });
 }
-renderExpenses()
+
+const ExpIncBtn = document.querySelector(".buttons")
+
+ExpIncBtn.addEventListener("click", (e) => {
+  if (e.target.classList.contains("income") || (e.target.classList.contains("expense"))) {
+    const form = document.querySelector(".toggle-form");
+    if(form){
+      form.classList.toggle("toggle-form");
+    }
+    if(!form.classList.contains("toggle-form")){
+      const closeBtn = document.querySelector(".cross-form")
+      if(closeBtn){
+        closeBtn.addEventListener("click",()=>{
+          form.classList.add("toggle-form")
+        })
+      }
+    }
+  }
+})
