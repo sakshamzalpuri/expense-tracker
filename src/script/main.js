@@ -1,2 +1,2 @@
-import { renderExpenses } from "./ui.js";
-renderExpenses()
+import { handleFormData } from "./ui.js";
+handleFormData()
