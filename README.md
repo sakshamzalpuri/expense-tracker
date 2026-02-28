@@ -15,6 +15,7 @@ A simple, vanilla JavaScript expense tracker. Add income and expenses, see your 
 
 1. Clone or download this repo.
 2. Open `index.html` in a browser (double-click or use a local server).
+3. OR https://sakshamzalpuri.github.io/expense-tracker/
 
 No build step or dependencies. Plain HTML, CSS, and ES modules.
 
